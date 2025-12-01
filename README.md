@@ -1,115 +1,112 @@
-☁️ Cloud Security – GCP
-Logging | IAM | Security Monitoring | Detections
+🔵 Blue Team Labs
+Logs reais | Investigação SOC | Ameaças simuladas
 
-Este repositório reúne scripts e exemplos práticos para análise de segurança no Google Cloud Platform (GCP), com foco em:
+Este repositório contém uma coleção de labs práticos pensados para treinar habilidades de:
 
-Logging e auditoria
+Análise de logs
 
-IAM (Identity & Access Management)
+Detecção de anomalias
 
-Detecções de configurações inseguras
+Investigação SOC Tier 1 / Tier 2
 
-Melhoria da postura de segurança
+Raciocínio de Threat Hunting
 
-Automação com Python + Google SDKs
+Resposta a incidentes
 
-Ideal para profissionais SOC, Cloud Security e Blue Team.
+Todos os labs usam dados reais simulados, cobrindo cenários comuns de segurança.
 
 🎯 Objetivos
 
-✔ Identificar riscos em configurações de IAM
-✔ Detectar buckets públicos indevidos
-✔ Analisar eventos críticos do Cloud Logging
-✔ Apoiar investigações de incidentes em GCP
-✔ Servir como portfólio profissional focado em Cloud Security
+✔ Treinar investigação em logs Linux, DNS e Windows
+✔ Criar raciocínio de detecção baseado em comportamento
+✔ Simular incidents reais (brute force, exfiltração, persistência)
+✔ Desenvolver maturidade SOC escolhida por recrutadores
+✔ Servir de portfólio técnico profissional
 
 📁 Estrutura do Repositório
-cloud-security-gcp/
+blue-team-labs/
 │
-├── logging/
-│   └── logging_analyzer.py
+├── logs/
+│   ├── linux_auth.log
+│   ├── dns.log
+│   └── windows.json
 │
-├── iam/
-│   └── iam_analyzer.py
+├── labs/
+│   └── brute_force/
+│       ├── challenge.md
+│       └── hints.txt
 │
-├── detections/
-│   └── public_buckets.py
-│
-└── requirements.txt
+└── answers/
+    └── brute_force.md
 
-🔍 Conteúdo dos Módulos
-1. Logging Analyzer
+🧪 Conteúdo dos Labs
+1. Brute Force – Linux Auth Logs
 
-Script para coletar e analisar eventos de auditoria no GCP.
+Neste desafio, o analista deve identificar:
 
-Inclui:
+Tentativas repetidas de login
 
-Acesso a logs via google-cloud-logging
+IPs suspeitos
 
-Filtragem por eventos de interesse (IAM, rede, storage, compute)
+Contas alvo
 
-Priorização de eventos suspeitos
+Indicadores de brute force
 
-✔ Apoia investigações de incidentes
-✔ Pode ser integrado a um SIEM (Splunk, QRadar, Chronicle)
+Padrões anômalos
 
-2. IAM Analyzer
+O arquivo answers/brute_force.md oferece uma explicação técnica de como a investigação deve ser feita.
 
-Análise de políticas IAM com foco em:
+2. DNS Logs
 
-Permissões amplas
+Exercício ideal para treinar:
 
-Service accounts com privilégios desnecessários
+Domínios raros
 
-Riscos de privilege escalation
+Consultas suspeitas
 
-Acesso público inadvertido
+Volume anômalo
 
-✔ Detecta problemas de least privilege
-✔ Ajuda a reforçar postura Zero Trust
+Possíveis tunneling attempts
 
-3. Public Buckets Detection
+3. Windows Logs
 
-Detecção de buckets que estejam expostos para:
+Dataset base para futuras análises, incluindo:
 
-allUsers
+Execuções suspeitas
 
-allAuthenticatedUsers
+Processos incomuns
 
-Inclui:
+Eventos críticos
 
-Listagem de buckets
+▶️ Como Usar
 
-Checagem de ACLs e policies
+Abra os arquivos de log, analise os eventos e tente identificar:
 
-Alerta para buckets públicos
+✔ Anomalias
+✔ Indicadores de ataque
+✔ Padrões de comportamento
+✔ Possíveis TTPs
 
-✔ Mitiga risco comum de exposição de dados
+Depois, compare com a resposta em /answers/.
 
-▶️ Como Executar
-pip install -r requirements.txt
-python logging/logging_analyzer.py
-python iam/iam_analyzer.py
-python detections/public_buckets.py
+🛡️ Habilidades Demonstradas com Este Repositório
 
-🛡️ Skills Demonstradas com Este Repositório
+Investigação SOC
 
-Cloud Security (GCP)
+Threat Hunting em logs
 
-Logging / Cloud Audit
+Análise de Linux Auth, DNS e Windows
 
-IAM Analysis
+Detecção comportamental
 
-Detection Engineering
+Documentação técnica e metodologias Blue Team
 
-Python Automation
-
-Postura de Segurança
+MITRE ATT&CK
 
 📬 Contato
 
 Gustavo Okamoto
-Cybersecurity Analyst – SOC | Cloud Security
+Cybersecurity Analyst – SOC | Threat Detection
 📧 gugaokamoto1@gmail.com
 
 🔗 linkedin.com/in/gustavo-okamoto-de-carvalho-ti
