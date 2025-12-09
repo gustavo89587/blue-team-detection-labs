@@ -1,112 +1,112 @@
 🔵 Blue Team Labs
-Logs reais | Investigação SOC | Ameaças simuladas
+Real Logs / SOC investigation / simulated threats
 
-Este repositório contém uma coleção de labs práticos pensados para treinar habilidades de:
+This repository contains a collection of hands-on labs designed to train learning skills.:
 
-Análise de logs
+Log analysis
 
-Detecção de anomalias
+Anomaly detection
 
-Investigação SOC Tier 1 / Tier 2
+SOC Tier 1 / Tier 2 research
 
-Raciocínio de Threat Hunting
+Threat Hunting reasoning
 
-Resposta a incidentes
+Incident response
 
-Todos os labs usam dados reais simulados, cobrindo cenários comuns de segurança.
+All labs use simulated real data, covering common security scenarios.
 
-🎯 Objetivos
+🎯 Targets
 
-✔ Treinar investigação em logs Linux, DNS e Windows
-✔ Criar raciocínio de detecção baseado em comportamento
-✔ Simular incidents reais (brute force, exfiltração, persistência)
-✔ Desenvolver maturidade SOC escolhida por recrutadores
-✔ Servir de portfólio técnico profissional
+✔ Train investigation in Linux, DNS and Windows logs
+✔ Create behavior-based detection reasoning
+✔ Simulate real incidents (brute force, exfiltration, persistence)
+✔ Develop SOC maturity chosen by recruiters
+✔ Serves as a professional technical portfolio
 
-📁 Estrutura do Repositório
+📁 Repository structure
 blue-team-labs/
 │
 ├── logs/
-│   ├── linux_auth.log
-│   ├── dns.log
-│   └── windows.json
+│ ├ ─ ─ linux_auth.log
+│ ├ ─ ─ DNS.log
+│ └ ─ ─ windows.json
 │
 ├── labs/
-│   └── brute_force/
-│       ├── challenge.md
-│       └── hints.txt
+ brut── brute_force/
+│ ├ ─ ─ challenge.md
+│ └ ─ ─ hints.txt
 │
 └── answers/
     └── brute_force.md
 
-🧪 Conteúdo dos Labs
-1. Brute Force – Linux Auth Logs
+🧪 Content of Labs
+1. Brute Force-Linux Auth Logs
 
-Neste desafio, o analista deve identificar:
+In this challenge, the analyst must identify:
 
-Tentativas repetidas de login
+Repeated login attempts
 
-IPs suspeitos
+Suspected IPs
 
-Contas alvo
+Target accounts
 
-Indicadores de brute force
+Brute force indicators
 
-Padrões anômalos
+Anomalous patterns
 
-O arquivo answers/brute_force.md oferece uma explicação técnica de como a investigação deve ser feita.
+The answers/brute_force. md file provides a technical explanation of how the investigation should be done.
 
 2. DNS Logs
 
-Exercício ideal para treinar:
+Ideal exercise for training:
 
-Domínios raros
+Rare domains
 
-Consultas suspeitas
+Suspicious queries
 
-Volume anômalo
+Anomalous Volume
 
-Possíveis tunneling attempts
+Possible tunneling attempts
 
 3. Windows Logs
 
-Dataset base para futuras análises, incluindo:
+Base Dataset for future analysis, including:
 
-Execuções suspeitas
+Suspicious executions
 
-Processos incomuns
+Unusual processes
 
-Eventos críticos
+Critical events
 
-▶️ Como Usar
+▶️ How To Use
 
-Abra os arquivos de log, analise os eventos e tente identificar:
+Open the log files, analyze the events and try to identify:
 
-✔ Anomalias
-✔ Indicadores de ataque
-✔ Padrões de comportamento
-✔ Possíveis TTPs
+✔ Anomalies
+✔ Attack indicators
+✔ Behavior patterns
+✔ Possible TTPs
 
-Depois, compare com a resposta em /answers/.
+Then compare with the answer in / answers/.
 
-🛡️ Habilidades Demonstradas com Este Repositório
+Demonst️ Demonstrated skills with this repository
 
-Investigação SOC
+SOC investigation
 
-Threat Hunting em logs
+Threat Hunting in logs
 
-Análise de Linux Auth, DNS e Windows
+Analysis of Linux Auth, DNS and Windows
 
-Detecção comportamental
+Behavioral detection
 
-Documentação técnica e metodologias Blue Team
+Technical documentation and methodologies Blue Team
 
 MITRE ATT&CK
 
-📬 Contato
+📬 Contact
 
 Gustavo Okamoto
-Cybersecurity Analyst – SOC | Threat Detection
+Cybersecurity Analyst – SOC / Threat Detection
 📧 gugaokamoto1@gmail.com
 
 🔗 linkedin.com/in/gustavo-okamoto-de-carvalho-ti
